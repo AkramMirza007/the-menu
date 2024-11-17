@@ -3,26 +3,26 @@ import React from 'react'
 const Landingp = () => {
   return (
     <>
-      <div className='w-full h-[50vh] bg-gray-300 grid grid-cols-3 gap-2 px-2 pt-[0.8rem] pb-2'>
+      <div className='w-full h-[60vh] bg-white grid grid-cols-3 gap-2 px-2 pt-2  pb-2'>
 
         {[
           {
-            img: "https://images.unsplash.com/photo-1507955987999-df4864ee80d4?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            price: "200$"
+            img: "https://images.samsung.com/is/image/samsung/assets/in/ai-products/merchandising/version-1/2408/co05_showcase-card-tab-travel-3_pc_684x684.jpg?$684_684_JPG$",
+            price: "AI Translation"
           },
           {
-            img: "https://images.unsplash.com/photo-1591122947157-26bad3a117d2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            price: "200$"
+            img: "https://images.lifestyleasia.com/wp-content/uploads/sites/5/2024/01/22110449/Samsung-S24-Series-Galaxy-AI-Note-Assist-806x806.jpg",
+            price: "Note Assits"
           },
           {
-            img: "https://images.unsplash.com/photo-1661347333288-ac27f72c54cc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            price: "200$"
+            img: "https://www.digitaltrends.com/wp-content/uploads/2024/01/galaxy-24-ultra-photo-edit-ai-2.jpg?fit=3000%2C2000&p=1",
+            price: "Photo Assits 3"
           }
 
         ].map((item, index) => {
-          return <div className='landing-menu relative bg-white overflow-hidden rounded-md border-black border-2 '>
-            <img src={item.img} className='absolute bg-cover object-fill h-[100%] w-[100%] hover:scale-125 transition-all duration-500 ' alt="" />
-            <p className='absolute w-full bg-[rgba(0,0,0,0.46)] bottom-3 text-center font-semibold font-serif text-white '>{item.price}</p>
+          return <div key={index} className='landing-menu relative w-full  bg-black overflow-hidden rounded-md border-black border-2 '>
+            <img  src={item.img} className='absolute bg-cover object-fill h-[100%] w-[100%] hover:scale-[1.1] transition-all duration-500 ' alt="" />
+            <p className='absolute w-full text-stroke-[2px] bg-[rgba(56,56,56,0.32)] backdrop-blur-md  text-stroke-black bottom-3 text-center font-extrabold font-mono pointer-events-none text-white text-[2.5rem]'>{item.price}</p>
           </div>
         })}
 
