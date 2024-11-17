@@ -1,0 +1,126 @@
+ [
+        {
+            "name" : "samsung s24 ultra",
+            "img":"https://static1.anpoimages.com/wordpress/wp-content/uploads/2024/01/galaxy-s24-ultra-titanium-violet.png",
+            "bgVideo":"",
+            "similars":"s24",
+            "megapixal":"200",
+            "price": "149999",
+            "emi": "5444",
+            "verient" : "5G",
+            "storage" : ["128", "256", "516"],
+            "colorList" : ["black", "white", "metalic"]
+        },
+        {
+            "name" : "samsung s23 ultra",
+            "img":"",
+            "bgVideo":"",
+            "similars":"s23",
+            "megapixal": "108",
+            "price": "139999",
+            "emi": "5444",
+            "verient" : "5G",
+            "storage" : ["128", "256", "516"],
+            "colorList" : ["black", "white", "purpule"]
+        },
+        {
+            "name" : "samsung s22 ultra",
+            "img":"",
+            "bgVideo":"",
+            "megapixal": "12",
+            "price": "119999",
+            "emi": "5116",
+            "verient" : "5G",
+            "storage" : ["128", "256", "516"],
+            "colorList" : ["black", "white", "blue"]
+        },
+        {
+            "name" : "samsung s24",
+            "img":"",
+            "bgVideo":"",
+            "megapixal": "50",
+            "price": "89999",
+            "emi": "5444",
+            "verient" : "5G",
+            "storage" : ["128", "256", "516"],
+            "colorList" : ["black", "white", "metalic"]
+        },
+        {
+            "name" : "samsung s23",
+            "img":"",
+            "bgVideo":"",
+            "megapixal":"50",
+            "price": "79999",
+            "emi": "5444",
+            "verient" : "5G",
+            "storage" : ["128", "256", "516"],
+            "colorList" : ["black", "white", "gray"]
+        },
+        {
+            "name" : "samsung s22",
+            "img":"",
+            "bgVideo":"",
+            "megapixal": "64",
+            "price": "49999",
+            "emi": "3334",
+            "verient" : "5G",
+            "storage" : ["128", "256"],
+            "colorList" : ["black", "white", "metalic"]
+        },
+        {
+            "name" : "samsung m31 5g",
+            "img":"",
+            "bgVideo":"",
+            "megapixal": "108",
+            "price": "16999",
+            "emi": "2444",
+            "verient" : "5G",
+            "storage" : ["64", "128"],
+            "colorList" : ["black", "white", "red"]
+        },
+        {
+            "name" : "samsung m35 5g",
+            "img":"",
+            "bgVideo":"",
+            "megapixal": "64",
+            "price": "14999",
+            "emi": "2444",
+            "verient" : "5G",
+            "storage" : ["64", "128"],
+            "colorList" : ["black", "white", "blue"]
+        },
+        {
+            "name" : "samsung a55",
+            "img":"",
+            "bgVideo":"",
+            "megapixal": "50",
+            "price": "24999",
+            "emi": "3444",
+            "verient" : "5G",
+            "storage" : ["64", "128"],
+            "colorList" : ["black", "white", "prism"]
+        },
+        {
+            "name" : "samsung a75",
+            "img":"",
+            "bgVideo":"",
+            "megapixal": "64",
+            "price": "39999",
+            "emi": "3544",
+            "verient" : "5G",
+            "storage" : ["64", "128"],
+            "colorList" : ["black", "white", "metalic"]
+        },
+        {
+            "name" : "samsung a35",
+            "img":"",
+            "bgVideo":"",
+            "megapixal": "64",
+            "price": "29999",
+            "emi": "3544",
+            "verient" : "5G",
+            "storage" : ["64", "128"],
+            "colorList" : ["black", "white", "metalic"]
+        }
+        
+    ]
