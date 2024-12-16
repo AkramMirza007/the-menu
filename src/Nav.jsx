@@ -64,9 +64,9 @@ function Nav() {
 
         {/* nav search */}
         <div className={`w-[100%] z-10  h-16  ease-in-out duration-500 py-[4px] gap-[4px] bg-[rgb(216,216,213)] top-0 left-[0%] outline-none fixed flex flex-col items-center justify-center   ${isOpen ? 'top-[4rem]' : 'top-8'}`}>
-          <input type="text" value={value} onChange={onChange} className='w-[95%]  h-[60%] rounded-[0.5rem] text-sm self-center text-gray-600 outline-none px-[0.8rem] ' name="" id="search_box" />
+          <input type="text" value={value} onChange={onChange} className='w-[95%]  h-[60%] rounded-[0.5rem] text-sm self-center bg-gray-100 text-gray-800 outline-none px-[0.8rem] tracking-wide ' name="" id="search_box" />
           <div className="list-con relative h-8  w-full">
-            <div className="list-option shadow-md w-[100%] z-10  h-fit text-sm py-[0.25rem] ease-in-out duration-500 left-[0%] outline-none fixed flex items-center justify-evenly  ">
+            <div className="list-option shadow-md w-[100%] z-10  h-fit text-sm py-[0.25rem] ease-in-out duration-500 left-[0%] outline-none fixed flex items-center justify-evenly tracking-wide  ">
               {listOption.map((item, index) => {
                 return <a key={index} onClick={() => onSearch(item.fullName || item.similar)} href={item.link} className=" active:bg-black active:rounded-md active:text-white px-1 ">{item.name}</a>
               })}
@@ -74,7 +74,7 @@ function Nav() {
           </div>
         </div>
 
-        <div className={`search-lists w-[90%] h-fit bg-slate-100 transition-all ease-in-out duration-300 shadow-md  rounded-md fixed top-32  left-0 ${isShow ? 'scale-100' : 'scale-0' || 'shadow-none'} `}>
+        <div className={`search-lists w-[100%] h-fit bg-slate-100 transition-all ease-in duration-300 shadow-md  rounded-md fixed top-32  left-0 ${isShow ? 'scale-100' : 'scale-0' || 'shadow-none'} `}>
           <ul className="">
 
             {data.filter((item) => {
@@ -85,7 +85,7 @@ function Nav() {
               // const char = fullName.map((item,index)=>{ return fullName[item] == searchTerm })
 
               return searchTerm && fullName.startsWith(searchTerm) && fullName !== searchTerm || similar.startsWith(searchTerm) && similar === searchTerm
-            }).slice(0, 3).map((item, index) => {
+            }).slice(0, 5).map((item, index) => {
               return <li key={index} onClick={() => { onSearch(item.name) }} className="pl-[1rem] border-gray-300 border-b-[1px]">{item.name}</li>
             })}
 
