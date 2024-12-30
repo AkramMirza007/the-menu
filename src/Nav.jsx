@@ -59,7 +59,7 @@ function Nav() {
         {/* nav lists */}
         <div className='w-full h-16 top-0 left-0 fixed bg-white flex items-center justify-between z-20 capitalize shadow-md border-[1px]'>
           <div className='lNav w-[50%] text-[2rem]  flex justify-center font-bold text-gray-700 '><h2>Samsung</h2></div>
-          <div className='rNav w-[50%] gap-2 h-full flex items-center justify-evenly text-gray-500'><a href="#">home</a><a href="#" onClick={(e) => { onSearch(value); handleToggle(e); e.preventDefault() }} >search</a><a href="#">Order</a><a href="#">More</a></div>
+          <div className='rNav w-[50%] gap-2 h-full flex items-center justify-evenly text-gray-500'><a href="#">home</a><a href="#" onClick={(e) => { onSearch(value); handleToggle(e); e.preventDefault() }} >search</a><a href="#">Orders</a><a href="#">More</a></div>
         </div>
 
         {/* nav search */}
