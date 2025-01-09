@@ -5,7 +5,7 @@ import Landingp from './Landingp'
 import Landingslide from './Landingslide'
 import Nav from './Nav'
 import Marquee from './Marquee'
-import Intro from './intro'
+import Intro from './Intro'
 import Shown from './Shown'
 import Card from './Card'
 
