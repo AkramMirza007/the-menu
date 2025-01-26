@@ -2,6 +2,29 @@ import { useState } from "react";
 import data from './Mock_DATA.json';
 
 
+const Navlinks = [
+  {
+    id: 1,
+    name: "Home",
+    link: "#",
+  },
+  {
+    id: 2,
+    name: "Search",
+    link: "#",
+  },
+  {
+    id: 3,
+    name: "Orders",
+    link: "#",
+  },
+  {
+    id: 4,
+    name: "More",
+    link: "#",
+  },
+  
+]
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +33,8 @@ function Nav() {
     setIsOpen(!isOpen)
     setIsShow(!isShow)
     e.preventDefault()
+    console.log("search opend");
+    
   }
 
 
@@ -59,7 +84,10 @@ function Nav() {
         {/* nav lists */}
         <div className='w-full h-16 top-0 left-0 fixed bg-white flex items-center justify-between z-20 capitalize shadow-md border-[1px]'>
           <div className='lNav w-[50%] text-[2rem]  flex justify-center font-bold text-gray-700 '><h2>Samsung</h2></div>
-          <div className='rNav w-[50%] gap-2 h-full flex items-center justify-evenly text-gray-500'><a href="#">home</a><a href="#" onClick={(e) => { onSearch(value); handleToggle(e); e.preventDefault() }} >search</a><a href="#">Orders</a><a href="#">More</a></div>
+          {/* onClick={(e) => { onSearch(value); handleToggle(e); e.preventDefault() }} */}
+          <div className='rNav w-[50%] gap-2 h-full flex items-center justify-evenly text-gray-500'>{Navlinks.map((link,index)=>{
+            return <a className={`outline-none border-none`} key={index} onClick={index === 1 ? (e) => { onSearch(value); handleToggle(e); e.preventDefault() } : null } href={link.link}>{link.name}</a>
+          })}</div>
         </div>
 
         {/* nav search */}
